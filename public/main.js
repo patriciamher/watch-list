@@ -11,8 +11,8 @@ done.forEach(function(element) {
   element.addEventListener('click', function(e) {
     e.preventDefault();
     e.target.classList.toggle('hidden');
-  });
-});
+  })
+})
 
 Array.from(show).forEach(function(element){
   element.addEventListener('click', function(){
@@ -23,8 +23,8 @@ Array.from(show).forEach(function(element){
       body: JSON.stringify({
         'show': show
       })
-    });
-  });
+    })
+  })
 })
 
 Array.from(trash).forEach(function(element) {
@@ -40,5 +40,5 @@ Array.from(trash).forEach(function(element) {
       // remove the element from the DOM
       this.parentNode.parentNode.remove();
     }.bind(this));
-  });
-});
+  })
+})
